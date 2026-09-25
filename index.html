@@ -171,59 +171,62 @@
             </div>
         </section>
 
-        <!-- ========================================== -->
-        <!-- 4. GALERI VISUAL BOTI (GAMBAR LOKAL INTERAKTIF) -->
-        <!-- ========================================== -->
-        <section id="galeri" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-white/10">
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10">
-                <div>
-                    <span class="text-boti-gold font-mono text-xs font-bold uppercase tracking-wider block mb-1">Dokumentasi Visual</span>
-                    <h2 class="font-cinzel text-2xl sm:text-3xl font-bold text-white">Galeri Foto Kebudayaan Suku Boti</h2>
-                </div>
-                <p class="text-xs text-boti-muted mt-2 md:mt-0 max-w-md">Klik pada gambar untuk memperbesar tampilan dan membaca deskripsi detail kebudayaan.</p>
+       <!-- ========================================== -->
+<!-- 4. GALERI VISUAL BOTI (GAMBAR LOKAL INTERAKTIF) -->
+<!-- ========================================== -->
+<section id="galeri" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-white/10">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10">
+        <div>
+            <span class="text-boti-gold font-mono text-xs font-bold uppercase tracking-wider block mb-1">Dokumentasi Visual</span>
+            <h2 class="font-cinzel text-2xl sm:text-3xl font-bold text-white">Galeri Foto Kebudayaan Suku Boti</h2>
+        </div>
+        <p class="text-xs text-boti-muted mt-2 md:mt-0 max-w-md">Klik pada gambar untuk memperbesar tampilan dan membaca deskripsi detail kebudayaan.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Foto 1: Ume Kbubu -->
+        <div class="bg-boti-card rounded-2xl overflow-hidden border border-white/10 hover:border-boti-gold transition group cursor-pointer" 
+             onclick="openLightbox('ume.jpg', 'Ume Kbubu (Rumah Bulat)', 'Rumah tradisional Boti beratap ilalang tebal hingga menyentuh tanah. Pintu masuk yang rendah mengharuskan setiap tamu membungkuk sebagai bentuk penghormatan.')">
+            <div class="relative h-56 overflow-hidden">
+                <img src="ume.jpg" alt="Ume Kbubu Suku Boti" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-boti-dark via-transparent opacity-80"></div>
+                <span class="absolute bottom-3 left-3 bg-boti-red text-white text-[10px] font-bold px-2 py-1 rounded">ume</span>
             </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Foto 1: Ume Kbubu -->
-                <div class="bg-boti-card rounded-2xl overflow-hidden border border-white/10 hover:border-boti-gold transition group cursor-pointer" onclick="openLightbox('gambar/umuekbubu.jpg', 'Ume Kbubu (Rumah Bulat)', 'Rumah tradisional Boti beratap ilalang tebal hingga menyentuh tanah. Pintu masuk yang rendah mengharuskan setiap tamu membungkuk sebagai bentuk penghormatan.')">
-                    <div class="relative h-56 overflow-hidden">
-                        <img src="ume.jpg" alt="Ume Kbubu Suku Boti" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-boti-dark via-transparent opacity-80"></div>
-                        <span class="absolute bottom-3 left-3 bg-boti-red text-white text-[10px] font-bold px-2 py-1 rounded">ume</span>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-cinzel text-lg font-bold text-white group-hover:text-boti-gold transition">Ume</h3>
-                        <p class="text-xs text-boti-muted mt-1 line-clamp-2">Rumah khas Timor beratap ilalang tebal penyimpan bahan pangan dan pusat kehidupan keluarga.</p>
-                    </div>
-                </div>
-
-                <!-- Foto 2: Tenun Ikat Boti -->
-                <div class="bg-boti-card rounded-2xl overflow-hidden border border-white/10 hover:border-boti-gold transition group cursor-pointer" onclick="openLightbox('gambar/tenun_ikat.jpg', 'Motif Tenun Ikat Tradisional', 'Tenun ikat Boti menggunakan pewarna alami dari tanaman seperti mengkudu dan tarum. Digunakan dalam acara adat serta pakaian sehari-hari.')">
-                    <div class="relative h-56 overflow-hidden">
-                        <img src="tenun.jpg" alt="Tenun Ikat Boti" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-boti-dark via-transparent opacity-80"></div>
-                        <span class="absolute bottom-3 left-3 bg-boti-red text-white text-[10px] font-bold px-2 py-1 rounded">tenun</span>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-cinzel text-lg font-bold text-white group-hover:text-boti-gold transition">Motif Tenun Ikat Alami</h3>
-                        <p class="text-xs text-boti-muted mt-1 line-clamp-2">Mahakarya tenunan benang kapas dengan pewarnaan alami tumbuhan setempat.</p>
-                    </div>
-                </div>
-
-                <!-- Foto 4: Adat (Pakaian Adat Suku Boti) -->
-                <div class="bg-boti-card rounded-2xl overflow-hidden border border-white/10 hover:border-boti-gold transition group cursor-pointer" onclick="openLightbox('gambar/adat.jpg', 'Pakaian & Busana Adat Suku Boti', 'Pakaian tradisional Suku Boti terbuat dari kain tenun buatan tangan sendiri dengan benang kapas alami dan pewarna dari tumbuhan. Laki-laki membiarkan rambut panjang dikonde dan mengenakan selimut tenun, sedangkan wanita mengenakan sarung tenun khas.')">
-                    <div class="relative h-56 overflow-hidden">
-                        <img src="adt.jpg" alt="Adat" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-boti-dark via-transparent opacity-80"></div>
-                        <span class="absolute bottom-3 left-3 bg-boti-red text-white text-[10px] font-bold px-2 py-1 rounded">adt</span>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-cinzel text-lg font-bold text-white group-hover:text-boti-gold transition">adat</h3>
-                        <p class="text-xs text-boti-muted mt-1 line-clamp-2">Busana tenun tradisional hasil karya mandiri dengan simbol keagungan adat Suku Boti.</p>
-                    </div>
-                </div>
+            <div class="p-4">
+                <h3 class="font-cinzel text-lg font-bold text-white group-hover:text-boti-gold transition">Ume</h3>
+                <p class="text-xs text-boti-muted mt-1 line-clamp-2">Rumah khas Timor beratap ilalang tebal penyimpan bahan pangan dan pusat kehidupan keluarga.</p>
             </div>
-        </section>
+        </div>
+
+        <!-- Foto 2: Tenun Ikat Boti -->
+        <div class="bg-boti-card rounded-2xl overflow-hidden border border-white/10 hover:border-boti-gold transition group cursor-pointer" 
+             onclick="openLightbox('tenun.jpg', 'Motif Tenun Ikat Tradisional', 'Tenun ikat Boti menggunakan pewarna alami dari tanaman seperti mengkudu dan tarum. Digunakan dalam acara adat serta pakaian sehari-hari.')">
+            <div class="relative h-56 overflow-hidden">
+                <img src="tenun.jpg" alt="Tenun Ikat Boti" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-boti-dark via-transparent opacity-80"></div>
+                <span class="absolute bottom-3 left-3 bg-boti-red text-white text-[10px] font-bold px-2 py-1 rounded">tenun</span>
+            </div>
+            <div class="p-4">
+                <h3 class="font-cinzel text-lg font-bold text-white group-hover:text-boti-gold transition">Tenun</h3>
+                <p class="text-xs text-boti-muted mt-1 line-clamp-2">Mahakarya tenunan benang kapas dengan pewarnaan alami tumbuhan setempat.</p>
+            </div>
+        </div>
+
+        <!-- Foto 3: Pakaian Adat Suku Boti -->
+        <div class="bg-boti-card rounded-2xl overflow-hidden border border-white/10 hover:border-boti-gold transition group cursor-pointer" 
+             onclick="openLightbox('adt.jpg', 'Pakaian & Busana Adat Suku Boti', 'Pakaian tradisional Suku Boti terbuat dari kain tenun buatan tangan sendiri dengan benang kapas alami dan pewarna dari tumbuhan. Laki-laki membiarkan rambut panjang dikonde dan mengenakan selimut tenun, sedangkan wanita mengenakan sarung tenun khas.')">
+            <div class="relative h-56 overflow-hidden">
+                <img src="adt.jpg" alt="Pakaian Adat Suku Boti" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-boti-dark via-transparent opacity-80"></div>
+                <span class="absolute bottom-3 left-3 bg-boti-red text-white text-[10px] font-bold px-2 py-1 rounded">adat</span>
+            </div>
+            <div class="p-4">
+                <h3 class="font-cinzel text-lg font-bold text-white group-hover:text-boti-gold transition">Pakaian Adat</h3>
+                <p class="text-xs text-boti-muted mt-1 line-clamp-2">Busana tenun tradisional hasil karya mandiri dengan simbol keagungan adat Suku Boti.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
         <!-- ========================================== -->
         <!-- 5. SEKSYEN PENJELASAN PAKAIAN ADAT SUKU BOTI -->
